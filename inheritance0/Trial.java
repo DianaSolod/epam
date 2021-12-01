@@ -60,9 +60,6 @@ public class Trial {
             return false;
         }
         Trial trial = (Trial) obj;
-        if (name.equals(trial.name) & mark1 == trial.mark1 & mark2 == trial.mark2) {
-            return true;
-        }
-        else return false;
+        return name.equals(trial.name) & mark1 == trial.mark1 & mark2 == trial.mark2;
     }
 }
