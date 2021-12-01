@@ -16,18 +16,23 @@ public class Trial {
     public int getMark1() {
         return mark1;
     }
+    
     public int getMark2() {
         return mark2;
     }
+    
     public String getName() {
         return name;
     }
+    
     public void setMark1(int mark1) {
         this.mark1 = mark1;
     }
+    
     public void setMark2(int mark2) {
         this.mark2 = mark2;
     }
+    
     public void setName(String name) {
         this.name = name;
     }
