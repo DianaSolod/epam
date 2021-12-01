@@ -10,6 +10,6 @@ public class LiteTrial extends Trial {
     }
 
     public boolean isPassed() {
-        return getMark1() >= PASS_MARK1 && getMark2() >= PASS_MARK2;
+        return getMark1() >= PASS_MARK1 & getMark2() >= PASS_MARK2;
     }
 }
