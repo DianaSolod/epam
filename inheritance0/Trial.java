@@ -43,4 +43,16 @@ public class Trial {
         return String.format("%s;%d;%d;%b",
                 name, mark1, mark2, isPassed());
     }
+    
+    @Override
+    public boolean equals(Object obj){
+        if (obj.getClass() != this.getClass()) {
+            return false;
+        }
+        Trial trial = (Trial) obj;
+        if (name.equals(trial.name) & mark1 == trial.mark1 & mark2 == trial.mark2) {
+            return true;
+        }
+        else return false;
+    }
 }
