@@ -19,7 +19,7 @@ public class ExtraTrial extends Trial{
     }
 
     public double average(){
-        return (double)(getMark1() + getMark2() + mark3) / 3;
+        return (getMark1() + getMark2() + mark3) / 3.0;
     }
 
     public void clearMarks(){
