@@ -15,6 +15,7 @@ class Runner {
         System.out.println();
         Utils.badTrials(trials);
         System.out.println();
+        Utils.clearFailedTrials(trials);
         Utils.printTrials(trials);
         System.out.println();
         Utils.lineArgumentTrials(args, trials);
