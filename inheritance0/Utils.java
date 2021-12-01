@@ -13,6 +13,14 @@ public class Utils {
             }
         }
     }
+    
+    public static void clearFailedTrials(Trial[] trials){
+        for (Trial trial : trials) {
+            if(!trial.isPassed()){
+                trial.clearMarks();
+            }
+        }
+    }
 
     public static void lineArgumentTrials(String[]args, Trial[]trials){
         if (args.length >= 3) {
