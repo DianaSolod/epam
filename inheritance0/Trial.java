@@ -22,6 +22,15 @@ public class Trial {
     public String getName() {
         return name;
     }
+    public void setMark1(int mark1) {
+        this.mark1 = mark1;
+    }
+    public void setMark2(int mark2) {
+        this.mark2 = mark2;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
     public void clearMarks(){
         mark1 = 0;
         mark2 = 0;
