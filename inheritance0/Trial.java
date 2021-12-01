@@ -31,6 +31,7 @@ public class Trial {
     public void setName(String name) {
         this.name = name;
     }
+    
     public void clearMarks(){
         mark1 = 0;
         mark2 = 0;
@@ -44,7 +45,7 @@ public class Trial {
     }
 
     public double average(){
-        return (double)(mark1 + mark2) / 2;
+        return (mark1 + mark2) / 2.0;
     }
 
     @Override
