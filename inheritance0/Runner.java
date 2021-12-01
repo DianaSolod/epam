@@ -13,7 +13,7 @@ class Runner {
         };
         Utils.printTrials(trials);
         System.out.println();
-        Utils.failedTrials(trials);
+        Utils.badTrials(trials);
         System.out.println();
         Utils.printTrials(trials);
         System.out.println();
