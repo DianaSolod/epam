@@ -16,7 +16,7 @@ public class Utils {
     }
 
     public static void lineArgumentTrials(String[]args, Trial[]trials){
-        if (args.length > 0) {
+        if (args.length >= 3) {
             Trial newTrial = new Trial(args[0], Integer.parseInt(args[1]), Integer.parseInt(args[2]));
             for (String arg : args) {
                 System.out.printf("Trials of %s: %n", arg);
