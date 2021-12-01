@@ -17,10 +17,11 @@ public class Utils {
 
     public static void lineArgumentTrials(String[]args, Trial[]trials){
         if (args.length > 0) {
+            Trial newTrial = new Trial(args[0], Integer.parseInt(args[1]), Integer.parseInt(args[2]));
             for (String arg : args) {
                 System.out.printf("Trials of %s: %n", arg);
                 for (Trial trial : trials) {
-                    if (trial.getClass().equals(Trial.class) & trial.getName().equals(arg)) {
+                    if (newTrial.equals(trial)) {
                         System.out.println(trial);
                     }
                 }
