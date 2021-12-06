@@ -67,7 +67,10 @@ public class Purchase {
 
     @Override
     public boolean equals(Object obj){
-        if (! (obj instanceof Purchase)) {
+        if (this == obj) {
+            return true;
+        }
+        else if (! (obj instanceof Purchase)) {
             return false;
         }
         else {
