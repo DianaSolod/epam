@@ -24,10 +24,4 @@ public class PercentDiscountPurchase extends Purchase{
     public String fieldsToString(){
         return String.format("%s;%.3f", super.fieldsToString(), discount);
     }
-
-    @Override
-    public String toString(){
-        return String.format("%s;%s;",
-                fieldsToString(), getCost().convert());
-    }
 }
