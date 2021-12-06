@@ -20,11 +20,4 @@ public class PriceDiscountPurchase extends Purchase{
     public String fieldsToString(){
         return String.format("%s;%s", super.fieldsToString(), discount.toString());
     }
-
-    @Override
-    public String toString(){
-        return String.format("%s;%s;",
-                fieldsToString(), getCost().convert());
-    }
-
 }
