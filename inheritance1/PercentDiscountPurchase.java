@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class PercentDiscountPurchase extends Purchase{
-    private final static int MINIMUM = 3;
+    private final static int MINIMUM_AMOUNT = 3;
     private double discount;
 
     public PercentDiscountPurchase(String name, Byn price, int amount, double discount){
