@@ -10,7 +10,7 @@ public class PercentDiscountPurchase extends Purchase{
     }
     public PercentDiscountPurchase(Scanner sc) {
         super(sc);
-        this.discount = Double.parseDouble(sc.next());
+        this.discount = sc.nextDouble();
     }
 
     public Byn getCost(){
