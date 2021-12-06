@@ -9,7 +9,7 @@ public class PriceDiscountPurchase extends Purchase{
     }
     public PriceDiscountPurchase(Scanner sc) {
         super(sc);
-        this.discount = new Byn(Integer.parseInt(sc.next()));
+        this.discount = new Byn(sc.nextInt());
     }
 
     public Byn getCost(){
