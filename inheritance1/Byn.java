@@ -36,7 +36,7 @@ public class Byn implements Comparable<Byn>{
     }
 
     public Byn divide(int amount){
-        this.value = this.value / amount;
+        this.value /= amount;
         return this;
     }
 
