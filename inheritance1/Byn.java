@@ -41,7 +41,7 @@ public class Byn implements Comparable<Byn>{
     }
 
     public Byn add(Byn amount){
-        this.value = value + amount.value;
+        this.value += amount.value;
         return this;
     }
 
