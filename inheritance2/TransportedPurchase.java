@@ -8,7 +8,7 @@ public class TransportedPurchase extends AbstractPurchase {
 
     public Byn getCost(){
         Byn cost = super.getCost();
-        return new Byn((int) Math.floor(cost.substract(expenses) /100) * 100);
+        return new Byn(round(cost.substract(expenses)));
     }
 
     public String fieldsToString(){
