@@ -7,8 +7,7 @@ public class PriceDiscountPurchase extends AbstractPurchase {
     }
 
     public Byn getCost(){
-        Byn cost = new Byn(Byn.round(getProduct().getPrice().substract(discount) * getAmount()));
-        return cost;
+        return new Byn(Byn.round(getProduct().getPrice().substract(discount) * getAmount()));
     }
 
     public String fieldsToString(){
