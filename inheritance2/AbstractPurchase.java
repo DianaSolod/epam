@@ -27,8 +27,7 @@ public abstract class AbstractPurchase implements Comparable<AbstractPurchase>{
     }
 
     public Byn getCost(){
-        Byn cost = new Byn(product.getPrice().multiply(amount));
-        return cost;
+        return new Byn(product.getPrice().multiply(amount));
     }
 
     public String fieldsToString(){
