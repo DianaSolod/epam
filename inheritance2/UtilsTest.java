@@ -16,14 +16,14 @@ public class UtilsTest {
 
         //purchase with cost 5 is in the middle
         AbstractPurchase firstSet[] = {equalsFour, equalsFive, equalsNine, equalsTen};
-        assertEquals(Utils.search(firstSet), 1);
+        assertEquals(1, Utils.search(firstSet));
 
         //purchase with cost 5 is the least
         AbstractPurchase secondSet[] = {equalsFive, equalsNine , equalsTen};
-        assertEquals(Utils.search(secondSet), 0);
+        assertEquals(0, Utils.search(secondSet));
 
         //purchase with cost 5 is the biggest
         AbstractPurchase thirdSet[] = {equalsThree, equalsFour, equalsFive};
-        assertEquals(Utils.search(thirdSet), 2);
+        assertEquals(2, Utils.search(thirdSet));
     }
 }
