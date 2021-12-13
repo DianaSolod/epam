@@ -29,7 +29,7 @@ public abstract class AbstractPurchase implements Comparable<AbstractPurchase>{
     public Byn getCost() {
         Byn baseCost = product.getPrice().multiply(amount);
         Byn finalCost = getFinalCost(baseCost);
-		return finalCost.round(Byn.RoundMethod.FLOOR, 2);
+	return finalCost.round(Byn.RoundMethod.FLOOR, 2);
     }
 
     public String fieldsToString(){
