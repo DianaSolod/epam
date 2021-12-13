@@ -20,10 +20,10 @@ public class UtilsTest {
 
         //purchase with cost 5 is the least
         AbstractPurchase secondSet[] = {equalsFive, equalsNine , equalsTen};
-       // assertEquals(Utils.search(secondSet), 0);
+        assertEquals(Utils.search(secondSet), 0);
 
         //purchase with cost 5 is the biggest
         AbstractPurchase thirdSet[] = {equalsThree, equalsFour, equalsFive};
-      //  assertEquals(Utils.search(thirdSet), 2);
+        assertEquals(Utils.search(thirdSet), 2);
     }
 }
