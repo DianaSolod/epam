@@ -7,7 +7,7 @@ public class UtilsTest {
 
     @Test
     public void search() {
-        Product milk = new Product("Milk", new Byn());
+        Product milk = new Product("Milk", new Byn(140));
         AbstractPurchase equalsFive = new PriceDiscountPurchase(milk, 5, new Byn(30));
         AbstractPurchase equalsFour = new PriceDiscountPurchase(milk, 3, new Byn(20));
         AbstractPurchase equalsTen = new PercentDiscountPurchase(milk, 8, 5.5);
