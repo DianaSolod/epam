@@ -29,7 +29,10 @@ public class Byn implements Comparable<Byn>{
 
     @Override
     public boolean equals(Object obj){
-        if (obj.getClass() != this.getClass()) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
         Byn byn = (Byn) obj;
