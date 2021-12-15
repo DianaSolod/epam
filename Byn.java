@@ -24,7 +24,8 @@ public class Byn{
 
     @Override
     public boolean equals(Object obj){
-        if (obj.getClass() != this.getClass()) {
+        if (this == obj) return true;
+        if (obj == null || obj.getClass() != this.getClass()) {
             return false;
         }
         Byn byn = (Byn) obj;
