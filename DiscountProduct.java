@@ -1,3 +1,5 @@
+package by.epam.lab;
+
 public class DiscountProduct extends Product{
     private Byn discount;
 
