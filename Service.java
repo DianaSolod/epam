@@ -3,6 +3,21 @@ public class Service implements Priceable{
     private Byn totalCost;
     private int numberOfUsers;
 
+    public Service(){
+    }
+
+    public String getName(){
+        return name;
+    }
+    
+    public Byn getTotalCost(){
+        return totalCost;
+    }
+    
+    public int getNumberOfUsers(){
+        return numberOfUsers;
+    }
+    
     public Service(String name, Byn totalCost, int numberOfUsers){
         this.name = name;
         this.totalCost = totalCost;
