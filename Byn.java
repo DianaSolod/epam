@@ -13,13 +13,9 @@ public class Byn{
         return value;
     }
 
-    public String convert(){
-        return value / 100 + "." + value / 10 % 10 + value % 10;
-    }
-
     @Override
     public String toString(){
-        return String.format("%s", convert());
+        return value / 100 + "." + value / 10 % 10 + value % 10;
     }
 
     @Override
