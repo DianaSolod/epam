@@ -1,3 +1,5 @@
+package by.epam.lab;
+
 public class PurchaseUtils {
     private final Purchase purchase;
 
