@@ -27,7 +27,7 @@ public class Product implements Priceable{
 
     @Override
     public String toString(){
-        return String.format("%s;",
+        return String.format("%s",
                 fieldsToString());
     }
 }
