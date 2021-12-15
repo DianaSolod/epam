@@ -1,3 +1,5 @@
+package by.epam.lab;
+
 public class Service implements Priceable{
     private String name;
     private Byn totalCost;
