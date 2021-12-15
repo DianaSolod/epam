@@ -1,5 +1,5 @@
 public class PurchaseUtils {
-    private Purchase purchase;
+    private final Purchase purchase;
 
     public PurchaseUtils(Purchase purchase){
         this.purchase = purchase;
