@@ -34,7 +34,7 @@ public class PurchaseUtils {
     }
 
     public void printIsSameCost(Purchase[]purchases) {
-        boolean areEqual = true;
+        boolean areEqual = false;
         for (int i = 0; i < purchases.length; i++){
             areEqual = purchases[i].equals(this.purchase);
             if (areEqual) {
