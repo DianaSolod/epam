@@ -1,3 +1,5 @@
+package by.epam.lab;
+
 public class Purchase{
     private Priceable item;
     private Number amount;
