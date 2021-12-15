@@ -10,7 +10,7 @@ public class PurchaseUtils {
     }
 
     public void printPurchase(){
-        System.out.printf("%s%s;%s; %n",
+        System.out.printf("%s;%s;%s%n",
                 purchase.getItem(), purchase.getAmount(), purchase.getCost());
     }
 
