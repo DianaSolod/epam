@@ -1,3 +1,5 @@
+package by.epam.lab;
+
 public class Runner {
     public static void main(String[] args){
         Purchase p1 = new Purchase(new Product("Milk", new Byn(170)), 20);
