@@ -1,4 +1,4 @@
-//package by.epam.lab;
+package by.epam.lab;
 
 public class Purchase<T extends Priceable>{
     private T item;
