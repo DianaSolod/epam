@@ -1,4 +1,4 @@
-//package by.epam.lab;
+package by.epam.lab;
 
 public class Service implements Priceable{
     private String name;
