@@ -30,7 +30,7 @@ public class Runner {
         System.out.println("\nSum of marks from sorted array:");
         trials.stream().map(Trial::getSum).forEach(System.out::println);
 
-        ArrayList<Trial> unpassed = new ArrayList<Trial>(trials.stream().filter(trial -> !trial.isPassed()).toList());
+        List<Trial> unpassed = trials.stream().filter(trial -> !trial.isPassed()).map(p -> p.clone()).collect(Collectors.toList());
         unpassed.forEach(Trial::clearMarks);
         System.out.println("\nUnpassed trials with cleared marks:");
         unpassed.forEach(System.out::println);
