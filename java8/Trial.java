@@ -51,18 +51,6 @@ public class Trial  implements Comparable <Trial>{
     }
 
     @Override
-    public boolean equals(Object obj){
-        if (obj.getClass() != this.getClass()) {
-            return false;
-        }
-        Trial trial = (Trial) obj;
-        if (account.equals(trial.account) & mark1 == trial.mark1 & mark2 == trial.mark2) {
-            return true;
-        }
-        else return false;
-    }
-
-    @Override
     public int compareTo(Trial o) {
         return getSum() - o.getSum();
     }
