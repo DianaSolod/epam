@@ -13,9 +13,6 @@ public class ExtraTrial extends Trial{
         this.mark3 = mark3;
     }
 
-    protected int result() {
-        return super.result();
-    }
     public boolean isPassed() {
         return super.isPassed() & mark3 >= PASS_MARK3 ;
     }
