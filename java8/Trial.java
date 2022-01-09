@@ -1,3 +1,5 @@
+package by.epam.lab;
+
 public class Trial  implements Comparable <Trial>{
     public static final int PASS_MARK = 120;
     private String account;
