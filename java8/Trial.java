@@ -54,4 +54,15 @@ public class Trial  implements Comparable <Trial>{
     public int compareTo(Trial o) {
         return getSum() - o.getSum();
     }
+    
+    @Override
+    public Trial clone(){
+        Trial clonedObject = null;
+        try {
+            clonedObject = (Trial) super.clone();
+        } catch (CloneNotSupportedException e) {
+            System.out.println("CloneNotSupported");
+        }
+        return clonedObject;
+    }
 }
