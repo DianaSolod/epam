@@ -37,7 +37,7 @@ public class Trial  implements Comparable <Trial>{
     }
 
     public double average(){
-        return (double)(mark1 + mark2) / 2;
+        return (mark1 + mark2) / 2.0;
     }
 
     public int getSum(){
