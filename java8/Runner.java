@@ -28,7 +28,12 @@ public class Runner {
         trials.stream().map(Trial::getSum).forEach(System.out::println);
 
         System.out.println("\nUnpassed trials with cleared marks:");
-        List<Trial> unpassed = trials.stream().filter(trial -> !trial.isPassed()).map(p -> p.clone()).peek(p -> p.clearMarks()).peek(System.out::println).collect(Collectors.toList());
+        List<Trial> unpassed = trials.stream()
+            .filter(trial -> !trial.isPassed())
+            .map(Trial::clone())
+            .peek(Trial::clearMarks())
+            .peek(System.out::println)
+            .collect(Collectors.toList());
 
         int sums[] = trials.stream().mapToInt(Trial::getSum).toArray();
         System.out.println(Arrays.stream(sums).mapToObj(Integer::toString)
