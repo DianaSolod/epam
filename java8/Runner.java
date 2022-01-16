@@ -20,7 +20,7 @@ public class Runner {
         trials.forEach(System.out::println);
 
         System.out.println("\nNumber of passed trials:" +
-                trials.stream().filter(trial -> trial.isPassed()).count());
+                trials.stream().filter(Trial::isPassed()).count());
 
         trials.sort((Trial t1, Trial t2) -> Integer.compare(t1.getSum(),t2.getSum()));
 
