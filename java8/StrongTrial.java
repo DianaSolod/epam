@@ -1,3 +1,5 @@
+package by.epam.lab;
+
 public class StrongTrial extends Trial {
     private static final int MARK1_COEFF = 2;
     public StrongTrial() {
