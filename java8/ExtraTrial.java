@@ -12,10 +12,7 @@ public class ExtraTrial extends Trial{
         super(account, mark1, mark2);
         this.mark3 = mark3;
     }
-
-    protected int result() {
-        return super.result();
-    }
+    
     public boolean isPassed() {
         return super.isPassed() & mark3 >= PASS_MARK3 ;
     }
