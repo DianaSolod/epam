@@ -1,5 +1,3 @@
-package by.epam.lab;
-
 public class ExtraTrial extends Trial{
     private static final int PASS_MARK3 = 40;
     private int mark3;
