@@ -1,3 +1,5 @@
+package by.epam.lab;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
