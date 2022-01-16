@@ -1,3 +1,5 @@
+package by.epam.lab;
+
 public class LiteTrial extends Trial {
     private static final int PASS_MARK1 = 35;
     private static final int PASS_MARK2 = 60;
